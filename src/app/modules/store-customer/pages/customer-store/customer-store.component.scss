@@ -36,6 +36,10 @@
     margin-top: 10px;
 }
 
+swiper-slide {
+    width: 50% !important;
+}
+
 @media (min-width: 576px) {
     .store-banner .row .col-lg-6 .banner-content {
         padding: 100px 0;
@@ -56,6 +60,10 @@
 
     .store-banner .row .col-lg-6 .banner-content .custom-shop-now-btn {
         font-size: 12.768px;
+    }
+
+    swiper-slide {
+        width: 50% !important;
     }
 }
 
@@ -80,6 +88,10 @@
     .store-banner .row .col-lg-6 .banner-content .custom-shop-now-btn {
         font-size: 12.768px;
     }
+
+    swiper-slide {
+        width: 33.33% !important;
+    }
 }
 
 @media (min-width: 992px) {
@@ -103,6 +115,10 @@
     .store-banner .row .col-lg-6 .banner-content .custom-shop-now-btn {
         font-size: 14px;
     }
+
+    swiper-slide {
+        width: 33.33% !important;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -125,5 +141,9 @@
 
     .store-banner .row .col-lg-6 .banner-content .custom-shop-now-btn {
         font-size: 14px;
+    }
+
+    swiper-slide {
+        width: 25% !important;
     }
 }
