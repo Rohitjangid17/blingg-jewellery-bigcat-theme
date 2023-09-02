@@ -9,6 +9,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { CustomerStoreComponent } from './modules/store-customer/pages/customer-store/customer-store.component';
 import { AboutComponent } from './modules/store-customer/pages/about/about.component';
 import { ContactComponent } from './modules/store-customer/pages/contact/contact.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ContactComponent } from './modules/store-customer/pages/contact/contact
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
