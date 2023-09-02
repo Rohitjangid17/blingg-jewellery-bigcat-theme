@@ -4,9 +4,14 @@
             <img src="../../../assets/images/logo/blingg-logo-regular.png" class="img-fluid object-fit-cover"
                 alt="no image">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          >
+            <ng-container *ngIf="!openMenu; else closeMenu">
+                <span class="material-icons" (click)="onMenuOpen(true)">menu</span>
+            </ng-container>
+            <ng-template #closeMenu>
+                <span class="material-icons" (click)="onMenuClose(false)">close</span>
+            </ng-template>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto">
