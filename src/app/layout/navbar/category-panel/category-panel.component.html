@@ -1,1 +1,5 @@
-<p>category-panel works!</p>
+<div class="d-flex gap-2 flex-wrap justify-content-center">
+    <ng-container *ngFor="let category of allCategory">
+        <div class="category-name">{{category.categoryName |uppercase}}</div>
+    </ng-container>
+</div>
